@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Cards from './Components/Cards';
+
+const produits = [
+  {
+    id: 1,
+    title: 'Phone Samsung',
+    price: '1000 DH',
+    thumbnail : '960x0.jpg'
+  },
+  {
+    id: 2,
+    title: 'Phone Samsung',
+    price: '2190 DH',
+    thumbnail : '960x0.jpg'
+  },
+  {
+    id: 3,
+    title: 'Phone Samsung',
+    price: '3640 DH',
+    thumbnail: '960x0.jpg'
+  },
+  {
+    id: 4,
+    title: 'Phone Samsung',
+    price: '1270 DH',
+    thumbnail: '960x0.jpg'
+  },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Cards produits={produits} />
   );
 }
 
